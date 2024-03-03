@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="open">open stat</div>
+        <div class="max-score">
+            <div class="max-score__value">
+                <h2 class="max-score__title">Your best result:</h2>
+                <span class="max-score__value-content"></span>
+            </div>
+            <div class="close" id="score-table">close</div>
+        </div>
+        <div class="game-container">
+            <canvas id="game-window" width="600" height="600"></canvas>
+            <div class="modal-game">
+                <h2 class="modal-game__title">Game over</h2>
+                <h3 class="modal-game__desc">Play again!</h3>
+                <button class="restart-btn">start</button>
+                <div class="modal-game__score">
+                    your score:
+                    <span class="modal-game__score-content"></span>
+                </div>
+            </div>
+            <div class="modal-start modal-start--active">
+                <button class="start-btn">play</button>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-title">your progress:</div>
+            <div class="progress-value">
+
+            </div>
+        </div>
+        <div class="mobile-controls" style="display: none;">
+            <div class="mobile-controls__container">
+                <div class="arrow-up arrow" id="up">
+                    <svg class="arrow-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="arrow-left arrow" id="left"> 
+                    <svg class="arrow-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="arrow-down arrow" id="down">
+                    <svg class="arrow-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="arrow-right arrow" id="right">
+                    <svg class="arrow-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>                
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-settings">
+                <div class="close" id="modal-settings">X</div>
+                <ul class="settings-list">
+                    <li class="settings-list__item">
+                        <label class="settings-list__item-label" for="">reset your progress</label>
+                        <button class="settings-list__item-button" id="reset-score">Reset</button>
+                    </li>
+                </ul>
+                <svg class="modal-settings__done" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+        </div>
+        <button type="button" class="options-btn">
+            options
+        </button>
+    </div>
+</body>
+
+</html>

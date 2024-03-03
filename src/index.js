@@ -1,0 +1,13 @@
+import './js/app.js'
+import './js/consts.js'
+import './js/controls.js'
+import './js/keyControls.js'
+import './js/localStorage.js'
+import './js/modal.js'
+
+import './styles/app.scss'
+import './styles/header.scss'
+import './styles/modal-settings.scss'
+import './styles/modal.scss'
+import './styles/mobile.scss'
+import './styles/media.scss'
