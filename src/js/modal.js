@@ -1,7 +1,6 @@
-import { User, maxScoreContainer } from "./app.js"
+import { maxScoreContainer } from "./app.js"
 import { GameArea } from "./app.js"
 import { gameAreaSettings } from "./interfaces.js";
-import { tips } from "./tips.js";
 export const resetScoreBtn = document.querySelector('#reset-score');
 const settingsBtn = document.querySelector('.options-btn')
 const modal = document.querySelector('.modal')
@@ -16,7 +15,7 @@ settingsBtn.addEventListener('click', () => {
     modal.classList.toggle('modal--active', true)
 })
 
-speedSelect.forEach((speed,idx) => {
+speedSelect.forEach(speed => {
     speed.addEventListener('click', () => {
         return new GameArea().setGameAreaSpeed(speed.value)
     })
@@ -70,16 +69,4 @@ resetScoreBtn.addEventListener('click', () => {
 
     resetScoreBtn.disabled = true
     openBest.style.display = 'none'
-})
-
-resetScoreBtn.addEventListener('mouseover', () => {
-    if(!resetScoreBtn.hasAttribute('disabled')){
-        tipArea.classList.toggle('active')
-        tipArea.innerText = tips.emptyReset
-    }
-})
-
-resetScoreBtn.addEventListener('mouseleave', () => {
-    tipArea.classList.toggle('active', false)
-    tipArea.innerText = ''
 })
