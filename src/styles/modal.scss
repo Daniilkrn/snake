@@ -36,8 +36,6 @@
 }
 
 .restart-btn{
-    font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -48,8 +46,9 @@
 }
 
 .start-btn {
+    font-family: "Lilita One", sans-serif;
     font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -58,18 +57,34 @@
     border-radius: 4px;
     border: 0.5px solid rgb(227, 223, 223);
 }
+.settings-list__item-button {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px;
+    font-style: normal;
+    background-color: azure;
+}
+.settings-list__item-button:disabled {
+    opacity: 0.2;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .modal-game__title {
+    font-family: "Lilita One", sans-serif;
     font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
     padding: 10px 20px;
     font-size: 30px;
     color: white;
 }
 
 .modal-game__desc {
+    font-family: "Lilita One", sans-serif;
     font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -78,7 +93,9 @@
 .open{
     cursor: pointer;
     display: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     color: white;
     position: absolute;
@@ -86,6 +103,38 @@
 
 .open:hover {
     opacity: 0.7;
+}
+
+.modal-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.modal-settings__choice {
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid rgb(2, 2, 2);
+    padding: 5px;
+    justify-content: flex-start;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+}
+
+.modal-settings__choice option{
+    font-size: 18px;
+}
+
+.select-list {
+    margin: 0 auto;
+    margin-top: 20px;    
+    padding: 30px 120px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
 }
 
 .modal-settings__done {

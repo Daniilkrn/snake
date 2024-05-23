@@ -14,7 +14,16 @@
   background: url(../images/bright-purple-square-mosaic-textural-background.jpg);
   height: 100%;
   margin: 0;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
+#wall {
+  background-color: white;
+}
+
 
 .wrapper-back {
   animation: loopBackground 10s;
@@ -44,6 +53,7 @@ canvas {
   box-sizing: border-box;
   border: 1px solid white;
   background: rgba(11, 12, 11, 0.8);
+  border: 5px solid rgb(255, 255, 255);
 }
 
 .game-container{
@@ -69,14 +79,18 @@ button:hover {
 }
 
 .progress {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   background-color: black;
   margin-top: 40px;
-  padding: 10px 10px;
-  width: 400px;
+  padding: 10px;
+  border-radius: 40px;
   opacity: 0.6;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,7 +105,19 @@ button:hover {
   
 }
 
+.container {
+  height: 100%;
+  background-color: rgb(247, 247, 247);
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
 .max-score {
+  border: 2px solid rgb(175, 175, 175);
   animation: maxScore 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   position: relative;
   z-index: 101;
@@ -103,10 +129,11 @@ button:hover {
   justify-content: space-between;
   text-align: center;
   background-color: rgb(251, 248, 249);
-  margin-top: 100px;
-  width: 600px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 12px;
+  width: 100%;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 14px;
 }
 
 @keyframes maxScore {
@@ -163,7 +190,9 @@ button:hover {
 .max-score__value {
   display: flex;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: rgb(6, 5, 5);
   font-size: 12px;
   padding: 10px;
@@ -177,7 +206,9 @@ button:hover {
 }
 
 .max-score__value-content {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: rgb(29, 212, 13);
   font-size: 20px;
   line-height: 0;
@@ -231,4 +262,7 @@ button:hover {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

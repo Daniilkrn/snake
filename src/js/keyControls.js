@@ -1,5 +1,5 @@
-import { snake } from "./app.js"
-import { grid } from "./consts.js"
+import { grid } from "./interfaces.js"
+import { snake } from "./interfaces.js";
 
 const mobileKeys = document.querySelectorAll('.arrow')
 
