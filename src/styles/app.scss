@@ -79,6 +79,7 @@ button:hover {
 }
 
 .progress {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -101,9 +102,22 @@ button:hover {
   
   .progress-title {
     font-weight: 200;
+    white-space: nowrap;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
   
 }
+
+.bonus-tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  color: yellow;
+}
+
 
 .container {
   height: 100%;

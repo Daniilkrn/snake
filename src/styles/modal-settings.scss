@@ -1,120 +1,124 @@
 .modal-settings {
-    position: absolute;
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 800px;
-    height: 800px;
-    background: rgba(130, 10, 243, 1);
-    border-radius: 48px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  position: absolute;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 800px;
+  height: 800px;
+  background: rgba(130, 10, 243, 1);
+  border-radius: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .modal-settings .close {
-    padding: 20px;
+  padding: 20px;
 }
 
 .modal {
-    z-index: 150;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(139, 116, 161, 0.5);
+  z-index: 150;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(139, 116, 161, 0.5);
 }
 
 .modal--active {
-    display: flex;
+  display: flex;
 }
 
 .modal-settings--active {
-    position: absolute;
-    background: rgba(139, 116, 161, 0.5);
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  background: rgba(139, 116, 161, 0.5);
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .settings-list__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .settings-list__item-label {
-    display: block;
+  display: block;
 }
 
 .settings-list {
-    position: relative;
-    padding-top: 20px;
-    margin-top: 60px;
-    width: 100%;
-    background: rgb(255, 255, 255);
+  position: relative;
+  padding-top: 20px;
+  margin-top: 60px;
+  width: 100%;
+  background: rgb(255, 255, 255);
 }
 
-.settings-list__item-button#reset-score{
-    padding: 10px 34px;
+.settings-list__item-button#reset-score {
+  padding: 10px 34px;
 }
-
 
 .tipArea {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(180, 175, 180);
-    border-radius: 1rem;
-    border: 1px solid black;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 12px;
-    margin: 10px;
-    min-width: 300px;
-    height: 50px;
-    opacity: 0.6;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(180, 175, 180);
+  border-radius: 1rem;
+  border: 1px solid black;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  margin: 10px;
+  min-width: 300px;
+  height: 50px;
+  opacity: 0.6;
 }
 
 .tipArea.active {
-    display: block;
+  display: block;
 }
 
 .settings-list__item-button {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .modal-game__score {
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background: rgb(232, 229, 229);
-    font-size: 20px;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: rgb(232, 229, 229);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px 0px 17px 40px rgba(122, 140, 191, 0.1);
+  -moz-box-shadow: 0px 0px 17px 40px rgba(122, 140, 191, 0.1);
+  box-shadow: 0px 0px 17px 40px rgba(122, 140, 191, 0.1);
+    margin-top: auto;
+    padding: 12px 0px;
 }
 
 .modal-game__score-content {
-    font-size: 28px;
-    padding: 4px;
+  font-size: 28px;
+  padding: 4px;
 }
 
 .modal-score {
-
-    background-color: rgb(252, 251, 251);
-    padding: 8px;
-    border-radius: 40px;
-    margin-left: 10px;
-    color: gold;
-    font-size: 22px;
+  background-color: rgb(252, 251, 251);
+  padding: 8px;
+  border-radius: 40px;
+  margin-left: 10px;
+  color: gold;
+  font-size: 22px;
 }

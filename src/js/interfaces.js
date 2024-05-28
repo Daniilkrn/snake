@@ -12,7 +12,7 @@ export const snake = {
   paused: false,
   color: "green",
   progress: 0,
-  progressCount: 2,
+  progressCount: 3,
   initialCell: 3,
 };
 
@@ -21,6 +21,7 @@ export const obstacle = {
   y: 0,
   cells: [],
   color: "gray",
+  maxSize: 25,
 };
 
 export const apple = {
@@ -29,6 +30,21 @@ export const apple = {
   color: "red",
   length: 1,
 };
+
+export const boosts = {
+  counter: 0,
+  double: {
+    timeEnding: 15000,
+    x: null,
+    y: null,
+  },
+  get getStatus(){
+    return this.status
+  },
+  set setStatus(boolean){
+    return this.status = boolean
+  }
+}
 
 export const gameAreaSettings = {
   speed: 6

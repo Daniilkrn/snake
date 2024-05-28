@@ -9,7 +9,6 @@ const openBest = document.querySelector('.open')
 const done = document.querySelector('.modal-settings__done');
 const speedSelect = document.querySelectorAll('.modal-settings__choice');
 const optionSelect = document.querySelectorAll('.modal-settings__choice-option');
-const tipArea = document.querySelector('.tipArea');
 
 settingsBtn.addEventListener('click', () => {
     modal.classList.toggle('modal--active', true)
