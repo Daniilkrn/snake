@@ -67,7 +67,6 @@ class Obstacle {
 
 class Boosts {
   constructor(status) {
-    console.log(status);
     this.status = status;
   }
   setBoost2X() {

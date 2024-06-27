@@ -4,7 +4,6 @@ import { snake } from "./interfaces.js";
 const mobileKeys = document.querySelectorAll('.arrow')
 
 function keyDownsMobile(key) {
-    console.log(key.target);
     if (key.target.id === 'up') {
         if (snake.dx > 0) {
             snake.dy = -grid
@@ -17,7 +16,6 @@ function keyDownsMobile(key) {
         }
     }
     else if (key.target.id === 'down') {
-        console.log('da');
         if (snake.dx > 0) {
             snake.dy = grid
             snake.dx = 0

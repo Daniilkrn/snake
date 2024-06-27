@@ -1,7 +1,6 @@
 import { boosts, snake } from "./interfaces";
 const progressTitle = document.querySelector('.progress-title')
 export function drawBonusTips () {
-    console.log('привет');
     boosts.setStatus = false;
     snake.progressCount = 6;
     progressTitle.style.color = 'yellow';
@@ -21,5 +20,6 @@ export function drawBonusTips () {
         c -= 1;
         countText = c
       }
+      bonus.innerHTML = ''
     }, 1000);
 } 
